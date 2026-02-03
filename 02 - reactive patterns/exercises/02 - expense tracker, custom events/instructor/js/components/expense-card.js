@@ -118,7 +118,7 @@ class ExpenseCard extends HTMLElement {
               detail: {
                 id: this.id,
                 title: this.getAttribute("title"),
-                category: this.getAttribute("category"),
+                category: this.getAttribute("category").toLowerCase(), // see: index.html, select option values are lowercase
                 date: this.getAttribute("date"),
                 amount: this.getAttribute("amount"),
               },  
